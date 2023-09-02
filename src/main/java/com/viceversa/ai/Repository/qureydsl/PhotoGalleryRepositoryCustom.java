@@ -7,8 +7,6 @@ import java.util.List;
 public interface PhotoGalleryRepositoryCustom {
 
     List<PhotoGalleryDto> findAll(
-            String galTitle,
-            String galCreatedTime,
-            String galModifiedTime
+            String galTitle
     );
 }
