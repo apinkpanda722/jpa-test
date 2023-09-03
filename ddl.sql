@@ -1,4 +1,4 @@
-create table jpa_test.TB_PHOTO_GALLERY
+create table jpa_test.tb_photo_gallery
 (
     gal_content_id	varchar(20) not null
         primary key,

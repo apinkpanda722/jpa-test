@@ -17,33 +17,33 @@ import lombok.*;
 public class PhotoGallery {
 
     @Id
-    @Column(length = 20, nullable = false, name = "GAL_CONTENT_ID")
+    @Column(length = 20, nullable = false, name = "gal_content_id")
     private String galContentId;
 
-    @Column(length = 4, nullable = false, name = "GAL_CONTENT_TYPE_ID")
+    @Column(length = 4, nullable = false, name = "gal_content_type_id")
     private String galContentTypeId;
 
-    @Column(length = 256, nullable = false, name = "GAL_TITLE")
+    @Column(length = 256, nullable = false, name = "gal_title")
     private String galTitle;
 
-    @Column(length = 512, nullable = false, name = "GAL_WEB_IMAGE_URL")
+    @Column(length = 512, nullable = false, name = "gal_web_image_url")
     private String galWebImageUrl;
 
-    @Column(length = 20, name = "GAL_CREATED_TIME")
+    @Column(length = 20, name = "gal_created_time")
     private String galCreatedTime;
 
-    @Column(length = 20, name = "GAL_MODIFIED_TIME")
+    @Column(length = 20, name = "gal_modified_time")
     private String galModifiedTime;
 
-    @Column(length = 20, name = "GAL_PHOTOGRAPHY_MONTH")
+    @Column(length = 20, name = "gal_photography_month")
     private String galPhotographyMonth;
 
-    @Column(length = 256, name = "GAL_PHOTOGRAPHY_LOCATION")
+    @Column(length = 256, name = "gal_photography_location")
     private String galPhotographyLocation;
 
-    @Column(length = 20, name = "GAL_PHOTOGRAPHER")
+    @Column(length = 20, name = "gal_photographer")
     private String galPhotographer;
 
-    @Column(length = 256, name = "GAL_SEARCH_KEYWORD")
+    @Column(length = 256, name = "gal_search_keyword")
     private String galSearchKeyword;
 }

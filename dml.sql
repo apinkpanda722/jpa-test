@@ -1,4 +1,4 @@
-insert into `TB_PHOTO_GALLERY` (`gal_content_id`, `gal_content_type_id`, `gal_title`, `gal_web_image_url`, `gal_created_time`, `gal_modified_time`, `gal_photography_month`, `gal_photography_location`, `gal_photographer`, `gal_search_keyword`)
+insert into `tb_photo_gallery` (`gal_content_id`, `gal_content_type_id`, `gal_title`, `gal_web_image_url`, `gal_created_time`, `gal_modified_time`, `gal_photography_month`, `gal_photography_location`, `gal_photographer`, `gal_search_keyword`)
 values
 ('1002144', '17', '청설모', 'http://tong.visitkorea.or.kr/cms2/website/44/1002144.jpg', '20100420024817', '20150818231341', '201004', '서울 경복궁', '한국관광공사 김지호', '청설모, 동물'),
 ('1002619', '17', '경복궁 꽃담', 'http://tong.visitkorea.or.kr/cms2/website/19/1002619.jpg', '20100420222711', '20150818233000', '201004', '서울', '한국관광공사 김지호', '경복궁 자경전 꽃담 문양, 고궁'),
@@ -22,7 +22,7 @@ values
 ('1012295', '17', '신양해수욕장', 'http://tong.visitkorea.or.kr/cms2/website/95/1012295.jpg', '20100430092654', '20150819131247', '201004', '제주도 ', '한국관광공사 김지호', '신양해수욕장, 바다, 해변'),
 ('1012789', '17', '제주 서광다원', 'http://tong.visitkorea.or.kr/cms2/website/89/1012789.jpg', '20100430153650', '20150819140704', '201004', '제주도', '한국관광공사 김지호', '제주 서광다원, 녹차밭'),
 ('1012992', '17', '멍게칼국수', 'http://tong.visitkorea.or.kr/cms2/website/92/1012992.jpg', '20100430174654', '20150819144614', '201004', '제주도', '한국관광공사 김지호', '멍게칼국수'),
-('1013256', '17', '조랑말', 'http://tong.visitkorea.or.kr/cms2/website/56/1013256.jpg', '20100503104900', '20150819145307', '제주도', '한국관광공사 김지호', '조랑말, 말, 동물'),
+('1013256', '17', '조랑말', 'http://tong.visitkorea.or.kr/cms2/website/56/1013256.jpg', '20100503104900', '20150819145307', '201004', '제주도', '한국관광공사 김지호', '조랑말, 말, 동물'),
 ('1013273', '17', '까마귀', 'http://tong.visitkorea.or.kr/cms2/website/73/1013273.jpg', '20100503110820', '20150819145619', '201004', '제주도', '한국관광공사 김지호', '까마귀, 새, 조류'),
 ('1013350', '17', '사계해안', 'http://tong.visitkorea.or.kr/cms2/website/50/1013350.jpg', '20100503132106', '20150819150713', '201004', '제주도 사계리 ', '한국관광공사 김지호', '농촌풍경, 제주도 사계해안도로, 바다 '),
 ('1013701', '17', '영암 법흥사', 'http://tong.visitkorea.or.kr/cms2/website/01/1013701.jpg', '20100503162557', '20150819150808', '201004', '전라남도 영암', '한국관광공사 박성근', '법흥사 관음전, 사찰, 절'),
