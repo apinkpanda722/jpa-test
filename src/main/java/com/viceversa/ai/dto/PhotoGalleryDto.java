@@ -1,6 +1,5 @@
-package com.viceversa.ai.Dto;
+package com.viceversa.ai.dto;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

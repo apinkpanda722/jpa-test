@@ -1,12 +1,13 @@
 package com.viceversa.ai.Repository.qureydsl;
 
-import com.viceversa.ai.Dto.PhotoGalleryDto;
-
-import java.util.List;
+import com.viceversa.ai.dto.PhotoGalleryDto;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface PhotoGalleryRepositoryCustom {
 
-    List<PhotoGalleryDto> findAll(
-            String galTitle
+    Page<PhotoGalleryDto> findAll(
+            String galTitle,
+            Pageable pageable
     );
 }
