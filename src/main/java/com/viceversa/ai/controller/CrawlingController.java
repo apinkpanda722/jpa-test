@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/apis/v1")
@@ -18,10 +20,9 @@ public class CrawlingController {
 
     private final CrawlingService crawlingService;
     @GetMapping("/crawling")
-    public Page<PhotoGalleryDto> crawlingPhotoGalleryData(
-            @RequestParam(value = "galTitle", required = false) String galTitle,
-            @PageableDefault(size = 100) Pageable page)
+    public List<PhotoGalleryDto> crawlingPhotoGalleryData(
+            @RequestParam(value = "galTitle", required = false) String galTitle)
     {
-        return crawlingService.selectCrawlingData(galTitle, page);
+        return crawlingService.selectCrawlingData(galTitle);
     }
 }

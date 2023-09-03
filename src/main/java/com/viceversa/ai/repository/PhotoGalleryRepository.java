@@ -1,6 +1,6 @@
-package com.viceversa.ai.Repository;
+package com.viceversa.ai.repository;
 
-import com.viceversa.ai.Repository.qureydsl.PhotoGalleryRepositoryCustom;
+import com.viceversa.ai.repository.qureydsl.PhotoGalleryRepositoryCustom;
 import com.viceversa.ai.entity.PhotoGallery;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

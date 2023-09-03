@@ -1,4 +1,4 @@
-package com.viceversa.ai.Repository.qureydsl;
+package com.viceversa.ai.repository.qureydsl;
 
 import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.BooleanExpression;
@@ -21,11 +21,10 @@ public class PhotoGalleryRepositoryCustomImpl extends QuerydslRepositorySupport 
     QPhotoGallery photoGallery = QPhotoGallery.photoGallery;
 
     @Override
-    public Page<PhotoGalleryDto> findAll(
-            String galTitle,
-            Pageable pageable
+    public List<PhotoGalleryDto> findAll(
+            String galTitle
     ) {
-        JPQLQuery<PhotoGalleryDto> query = from(photoGallery)
+        return from(photoGallery)
                 .select(Projections.constructor(
                         PhotoGalleryDto.class,
                         photoGallery.galContentId,
@@ -42,14 +41,8 @@ public class PhotoGalleryRepositoryCustomImpl extends QuerydslRepositorySupport 
                 .where(eqGalTitle(galTitle))
                 .orderBy(
                         photoGallery.galContentId.asc()
-                );
-
-        List<PhotoGalleryDto> photoGalleryList = Optional.ofNullable(getQuerydsl())
-                .orElseThrow(() -> new IllegalArgumentException("Spring Data JPA로부터 QueryDsl 인스턴스를 못 가져옴"))
-                .applyPagination(pageable, query)
+                )
                 .fetch();
-
-        return new PageImpl<>(photoGalleryList, pageable, query.fetchCount());
     }
 
     private BooleanExpression eqGalTitle(String galTitle) {
